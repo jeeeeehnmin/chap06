@@ -40,17 +40,16 @@
 		<div class="form-group">
 			<label>RegDate</label>
 <!-- 			날짜 양식 지정 출력은 JSTL 사용 -->
-			<fmt:formatDate var="regdata" value="${vo.regdata}" pattern="yyyy-MM-dd"/>
-			 <input class="form-control" name="regDate" value="${regdate}" readonly="readonly" />
+			<fmt:formatDate var="regdate" value="${vo.regdate}" pattern="yyyy-MM-dd"/>
+			 <input class="form-control" name="regdate" value="${regdate}" readonly="readonly" />
 		</div>
 
+<!-- QueryString 방식으로 변경 -->
 		<div class="pull-right">
-			<a href="/board/modify?page=${pageVO.page}&size=${pageVO.size}&type=${pageVO.type}&keyword=${pageVO.keyword}&bno =${vo.bno}" class="btn btn-default">Modify/Delete</a> 
+			<a href="/board/modify?page=${pageVO.page}&size=${pageVO.size}&type=${pageVO.type}&keyword=${pageVO.keyword}&bno=${vo.bno}" class="btn btn-default">Modify/Delete</a> 
 			             
-			<a href="/board/list?page=${pageVO.page}&size=${pageVO.size}&type=${pageVO.type}&keyword=${pageVO.keyword}&bno = ${vo.bno}" class="btn btn-primary">Go List</a> 
+			<a href="/board/list?page=${pageVO.page}&size=${pageVO.size}&type=${pageVO.type}&keyword=${pageVO.keyword}&bno=${vo.bno}" class="btn btn-primary">Go List</a> 
 		</div>
-
 	</div>
-
 </body>
 </html>

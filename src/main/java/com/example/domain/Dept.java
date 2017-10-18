@@ -40,8 +40,3 @@ public class Dept {
 	@OneToMany(mappedBy="dept", fetch=FetchType.LAZY)
 	List<Emp> emps;
 }
-
-
-
-
-
